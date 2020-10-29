@@ -11,12 +11,14 @@
     <header>
       <h1>Mozilla</h1>
       <!-- 插入 <img> 元素，链接至较小的 Firefox 标志。 -->
+      <img src="images/firefox-logo120.png">
 
     </header>
 
     <main>
       <article>
         <!-- 插入来自 Bilibili 的 <iframe> 元素 -->
+          <iframe src="https://player.bilibili.com/player.html?aid=3303261&bvid=BV1rs411d7hC&cid=5221342&page=2" scrolling="no"  frameborder="no" framespacing="0" allowfullscreen="true" width="400" height="225"> </iframe>
 
         <h2>自由网络 尽情驰骋</h2>
 
@@ -28,22 +30,47 @@
       <div class="further-info">
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
-          <img>
+          <img srcset="images/firefox-logo400.png 400w,
+                       images/firefox-logo120.png 120w"
+               sizes="(max-width:200px) 120w,
+                      400w"
+               src="images/firefox-logo400.png"
+               alt="火狐">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="images/mozilla-dinosaur400.png 400w,
+                       images/mozilla-dinosaur120.png 120w"
+               sizes="(max-width:480px) 120w,
+                      400w"
+               src="images/mozilla-dinosaur400.png"
+               alt="恐龙"
+               >
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="images/firefox-addons400.jpg 400w,
+                       images/firefox-addons120.jpg 120w"
+               sizes="(max-width:480px) 120w,
+                      400w"
+               src="images/firefox-addons400.jpg"
+               alt="火狐">
         </a>
         <a href="https://developer.mozilla.org/zh-CN/">
-          <img>
+          <img srcset="images/mozilla-dinosaur400.png 400w,
+                       images/mozilla-dinosaur120.png 120w"
+               sizes="(max-width:480px) 120w,
+                      400w"
+               src="images/mozilla-dinosaur400.png"
+               alt="恐龙">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- 插入照片元素 -->
+        <picture>
+          <source srcset="images/red-panda-portrait-small.jpg" media="(max-width: 600px)">
+          <img src="images/red-panda-landscape.jpg" alt="小熊猫">
+        </picture>
       </div>
 
     </main>
